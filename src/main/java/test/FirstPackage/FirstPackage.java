@@ -1,4 +1,4 @@
-package org.example.FirstPackage;
+package test.FirstPackage;
 
 public class FirstPackage {
     private int a1;
