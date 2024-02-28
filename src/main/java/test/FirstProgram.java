@@ -14,6 +14,7 @@ class FirstProgram {
                 System.out.print(firstPkg.sum());
                 System.out.print(" ");
             }
+
             System.out.println();
         }
     }

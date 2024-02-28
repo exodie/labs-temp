@@ -100,15 +100,15 @@ public class Vector {
 
     public static void main(String[] args) {
         Vector firstVector = new Vector(5);
-        Vector vectorTwo = new Vector(5);
-        Vector vectorThree = new Vector(5);
-        firstVector.add(1, 2, 3, 4, 5);
-        vectorTwo.add(1, 1, 1, 1, 1);
-        vectorThree.add(2, 2, 2, 2, 2);
+        Vector secondVector = new Vector(5);
+        Vector threeVector = new Vector(5);
+        firstVector.add(5, 2, 4, 9, 1);
+        secondVector.add(3, 2, 2, 2, 2);
+        threeVector.add(4, 4, 4, 4, 4);
 
         System.out.println(firstVector.toString());
 
-        System.out.println("Нулевой элемент: " + firstVector.get(0));
+        System.out.println("Нулевой элемент по индесу: " + firstVector.get(0));
 
         firstVector.setElement(0, 10);
         System.out.println("Нулевой элемент заменен на 10: " + firstVector.toString());
@@ -124,10 +124,10 @@ public class Vector {
         firstVector.multiplyByScalar(2);
         System.out.println("Вектор, умноженный на 2: " + firstVector.toString());
 
-        firstVector.plus(vectorTwo);
+        firstVector.plus(secondVector);
         System.out.println("Вектор 1 плюс Вектор 2: " + firstVector.toString());
 
-        firstVector.multiply(vectorThree);
+        firstVector.multiply(threeVector);
         System.out.println("Вектор 1 умноженный на Вектор 3: " + firstVector.toString());
     }
 }
